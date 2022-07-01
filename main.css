@@ -173,7 +173,7 @@ a:hover{
     animation: cursor 0.4s infinite;
 }
 
-.home-textPart a {
+.linkedin-button{
     text-decoration: none;
     border: 3px solid var(--secondaryColor);
     color: transparent;
@@ -185,7 +185,7 @@ a:hover{
     position: relative;
   }
 
-.home-textPart a:before {
+.linkedin-button:before {
     content: "LinkedIn";
     display: flex;
     justify-content: center;
@@ -204,12 +204,12 @@ a:hover{
     transform: scale(0) rotatey(0);
     opacity: 0;
   }
-.home-textPart a:hover:before {
+.linkedin-button:hover:before {
     transform: scale(1) rotatey(360deg);
     left: 0;
     opacity: 1;
   }
-.home-textPart a:after {
+.linkedin-button:after {
     content: "LinkedIn";
     display: flex;
     justify-content: center;
@@ -228,7 +228,69 @@ a:hover{
     transform: scale(1) rotatey(0);
     opacity: 1;
   }
-.home-textPart a:hover:after {
+.linkedin-button:hover:after {
+    transform: scale(0) rotatey(360deg);
+    left: -100%;
+    opacity: 0;
+  }
+
+.github-button{
+    text-decoration: none;
+    border: 3px solid var(--secondaryColor);
+    color: transparent;
+    padding: 18px 50px;
+    font-size: 28px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    transition: all 0.5s;
+    position: relative;
+    margin-left: 10px;
+  }
+
+.github-button:before {
+    content: "Github";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: var(--primaryColor);
+    font-size: 28px;
+    top: 0;
+    left: 100%;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(0) rotatey(0);
+    opacity: 0;
+  }
+.github-button:hover:before {
+    transform: scale(1) rotatey(360deg);
+    left: 0;
+    opacity: 1;
+  }
+.github-button:after {
+    content: "Github";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: var(--primaryColor);
+    font-size: 28px;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(1) rotatey(0);
+    opacity: 1;
+  }
+.github-button:hover:after {
     transform: scale(0) rotatey(360deg);
     left: -100%;
     opacity: 0;
