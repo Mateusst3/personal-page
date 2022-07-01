@@ -85,7 +85,15 @@ a:hover{
     .mobile-menu{
         display: block;
     }
-    
+    .home{
+        display: block;
+    }
+    .home-textPart{
+        margin-left: 20%;
+    }
+    .home-img{
+        margin-left: 20%;
+    }
 }
 
 .nav-list.active{
@@ -102,33 +110,60 @@ a:hover{
         transform: translateX(0);
     }
 }
-
-.home{
-    width: 100%;
-    height: 92vh;
-    font-family: 'Anonymous Pro', monospace;
-    width: 70%;  
-    color: var(--white);
-    margin-top: 28vh;
-    margin-left: 50vw;
-}
-
-
-  @keyframes cursor {
+@keyframes cursor {
     0% { opacity: 1; }
       49% { opacity: 1; }
       50% { opacity: 0; }
       100% { opacity: 0; }
   }
 
-.home h1 {
+.home{
+    width: 100%;
+    height: 92vh;
+    font-family: 'Anonymous Pro', monospace;
+    color: var(--white);
+    display: inline-block;
+    font-size: 0;
+}
+
+.home-img{
+    width: 50%;
+    height: 92vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.home-img img{
+    margin: 0 auto;
+    margin-top: -5vh;
+    max-width: 50vw;
+}
+
+.home-textPart{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.home-textPart h1 {
+    font-size: 60px;
     overflow: hidden;
     margin: 0 auto;
     display: inline-block;
     font-weight: normal;
     letter-spacing: 3px;
 }
-.home h1:after{
+
+.home-textPart h3{
+    font-size: 40px;
+}
+
+.ult-h3{
+    margin-bottom: 25px;
+}
+
+.home-textPart h1:after{
     content: '';
     display: inline-block;
     background-color: white;
@@ -138,7 +173,7 @@ a:hover{
     animation: cursor 0.4s infinite;
 }
 
-.home a {
+.home-textPart a {
     text-decoration: none;
     border: 3px solid var(--secondaryColor);
     color: transparent;
@@ -149,7 +184,8 @@ a:hover{
     transition: all 0.5s;
     position: relative;
   }
-.home a:before {
+
+.home-textPart a:before {
     content: "LinkedIn";
     display: flex;
     justify-content: center;
@@ -168,12 +204,12 @@ a:hover{
     transform: scale(0) rotatey(0);
     opacity: 0;
   }
-.home a:hover:before {
+.home-textPart a:hover:before {
     transform: scale(1) rotatey(360deg);
     left: 0;
     opacity: 1;
   }
-.home a:after {
+.home-textPart a:after {
     content: "LinkedIn";
     display: flex;
     justify-content: center;
@@ -192,8 +228,18 @@ a:hover{
     transform: scale(1) rotatey(0);
     opacity: 1;
   }
-.home a:hover:after {
+.home-textPart a:hover:after {
     transform: scale(0) rotatey(360deg);
     left: -100%;
     opacity: 0;
   }
+
+.home-textPart section{
+    margin-top: 30%;
+}
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+    background-color: #324359;
+}
