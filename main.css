@@ -301,7 +301,68 @@ a:hover{
 }
 
 .sobre{
+    margin-top: 10vh;
     width: 100%;
     height: 100vh;
-    background-color: #324359;
+    background-color: var(--primaryColor);
+    display: inline-block;
+    font-size: 0;
+}
+
+.sobre-textPart{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    vertical-align: top;
+    color: var(--white);
+}
+
+.sobre-textPart h1, .sobre-imgPart h1{
+    width: 90%;
+    margin-top: 10vh;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sobre-textPart p, .sobre-imgPart p{
+    width: 90%;
+    font-size: 25px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.sobre-textPart img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.sobre-imgPart{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    color: var(--white);
+    display: inline-block;
+    font-size: 25px;
+}
+
+.sobre-imgPart p{
+    font-size: 25px;
+    transition: 2s;
+}
+
+.sobre-textPart-imgs{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-textPart-imgs a{
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
 }

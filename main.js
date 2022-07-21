@@ -1,3 +1,5 @@
+
+
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks){
         this.mobileMenu = document.querySelector(mobileMenu);
@@ -47,13 +49,15 @@ var attr = tag.setAttribute("data", html);
 var txt = tag.getAttribute("data");
 var speed = 170;
 
-function typeWriter() {
-if (i <= txt.length) {
-    document.getElementById("text").innerHTML = txt.slice(0 , i + 1);
-    i++;
-    setTimeout(typeWriter, speed);
-}
-    //console.log(document.getElementById("text").innerHTML);
-}
+let buttonNtt = document.getElementById('experiencia-ntt')
+const fileUrl = './textos/teste.txt'
+buttonNtt.addEventListener('mouseover', () => {fetch(fileUrl).then(r => r.text().then(t => document.getElementById('textExperiencia').innerText = t)), document.getElementById('nomeExperiencia').innerText = 'Ntt Data'})
+buttonNtt.addEventListener('mouseleave', () => {document.getElementById('textExperiencia').innerText = '', document.getElementById('nomeExperiencia').innerText = ''})
 
-typeWriter();
+//funcao que vai inverter as cores
+// function changeColor(){
+//     document.documentElement.style.setProperty('--white', 'black')
+// }
+
+
+
